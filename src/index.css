@@ -15,3 +15,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.P5Sketch {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}

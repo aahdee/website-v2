@@ -21,14 +21,14 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 5s;
+    animation: logoani infinite 5s;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
   }
 }
 
 .App-header {
-  background-color: #f4f4ed;
+  background-color: rgba(100, 0, 100, 0);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

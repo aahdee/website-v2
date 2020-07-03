@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import P5Sketch from "./p5sketch";
+import P5Sketch from "./p5/p5sketch";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(

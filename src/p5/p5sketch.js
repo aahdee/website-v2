@@ -25,7 +25,7 @@ export default class P5Sketch extends Component {
     p5.angleMode(p5.DEGREES);
   };
   draw = (p5) => {
-    p5.background(0);
+    p5.background(244, 244, 237);
     p5.ambientLight(255);
     this.bx.draw(p5);
     this.bx.rotations(p5);

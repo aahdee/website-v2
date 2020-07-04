@@ -1,24 +1,36 @@
 import React, { Component } from "react";
 import Sketch from "react-p5";
-import CustomBox from "./CustomBox";
+import ThreeDHeart from "./ThreeDHeart";
 
 export default class P5Sketch extends Component {
   constructor() {
     super();
-    this.bx = new CustomBox(100);
+    //for(let i = 0; i < )
+    this.bx = new ThreeDHeart(0, 300);
   }
   setup = (p5, canvasParentRef) => {
     p5.createCanvas(window.innerWidth, window.innerHeight, p5.WEBGL).parent(
       canvasParentRef
     ); // use parent to render canvas in this ref (without that p5 render this canvas outside your component)
+    p5.ortho(
+      -p5.width / 2,
+      p5.width / 2,
+      -p5.height / 2,
+      p5.height / 2,
+      0.1,
+      2000
+    );
+
+    p5.noStroke();
     p5.angleMode(p5.DEGREES);
   };
   draw = (p5) => {
     p5.background(0);
     p5.ambientLight(255);
-    p5.orbitControl();
+    //p5.circle(p5.frameCount, 0, 60);
     this.axis(p5, 3);
     this.bx.draw(p5);
+    this.bx.rotations(p5);
     // NOTE: Do not use setState in draw function or in functions that is executed in draw function... pls use normal variables or class properties for this purposes
     //this.x++;
   };
@@ -34,7 +46,15 @@ export default class P5Sketch extends Component {
     p5.pop();
   };
   windowResized = (p5) => {
-    p5.resizeCanvas(window.innerWidth, window.innerHeight);
+    p5.resizeCanvas(window.innerWidth, window.innerHeight, true);
+    p5.ortho(
+      -p5.width / 2,
+      p5.width / 2,
+      -p5.height / 2,
+      p5.height / 2,
+      0.1,
+      2000
+    );
   };
   render() {
     return (

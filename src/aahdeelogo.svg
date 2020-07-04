@@ -13,12 +13,20 @@
    height="320.0px"
    width="320.0px"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   sodipodi:docname="icontransparent.svg"
-   inkscape:export-filename="D:\Drawings\Personal Stream\icontransparent.png"
+   sodipodi:docname="aahdeelogo.svg"
+   inkscape:export-filename="D:\Drawings\Personal Stream\icontransparentnew.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
-     id="defs3367" />
+     id="defs3367">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 160 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="320 : 160 : 1"
+       inkscape:persp3d-origin="160 : 106.66667 : 1"
+       id="perspective1448" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,22 +34,44 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="115.95446"
-     inkscape:cy="152.10584"
+     inkscape:zoom="1.7267173"
+     inkscape:cx="133.39406"
+     inkscape:cy="186.32251"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1375"
      inkscape:window-height="1041"
-     inkscape:window-x="129"
-     inkscape:window-y="57"
+     inkscape:window-x="19"
+     inkscape:window-y="67"
      inkscape:window-maximized="0"
-     showguides="true">
+     showguides="true"
+     inkscape:guide-bbox="true">
     <inkscape:grid
        id="grid3376"
        type="xygrid" />
+    <sodipodi:guide
+       position="24.017591,160"
+       orientation="0,1"
+       id="guide1450"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="160,367.50146"
+       orientation="-1,0"
+       id="guide1452"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-14.410555,229.46898"
+       orientation="0,1"
+       id="guide1454"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
   </sodipodi:namedview>
   <metadata
      id="metadata3370">
@@ -84,7 +114,7 @@
        id="path3956"
        sodipodi:sides="6"
        sodipodi:cx="160"
-       sodipodi:cy="160"
+       sodipodi:cy="160.0027"
        sodipodi:r1="100"
        sodipodi:r2="86.602539"
        sodipodi:arg1="-1.5707963"
@@ -92,6 +122,6 @@
        inkscape:flatsided="true"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="m 160,60 86.60254,50 0,100 L 160,260 73.397458,210 l 3e-6,-100 z" />
+       d="m 160,60.002701 86.60254,49.999999 0,100 -86.60254,50 -86.602542,-50 3e-6,-100 z" />
   </g>
 </svg>

@@ -2,13 +2,13 @@
   margin-bottom: 1rem;
   font-family: "Nova Square", cursive;
   font-size: 3rem;
-  color: #828282;
+  color: #525252;
 }
 
 .Bio {
   font-family: "Abel", sans-serif;
   font-size: 1.5rem;
-  color: #828282;
+  color: #525252;
 }
 
 code {
@@ -19,7 +19,7 @@ body {
   margin: 0;
 }
 .P5Sketch {
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0px;
   z-index: -1;

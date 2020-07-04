@@ -27,8 +27,6 @@ export default class P5Sketch extends Component {
   draw = (p5) => {
     p5.background(0);
     p5.ambientLight(255);
-    //p5.circle(p5.frameCount, 0, 60);
-    this.axis(p5, 3);
     this.bx.draw(p5);
     this.bx.rotations(p5);
     // NOTE: Do not use setState in draw function or in functions that is executed in draw function... pls use normal variables or class properties for this purposes

@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: "cubicregular";
-  src: url("cubic-webfont.woff2") format("woff2"),
-    url("cubic-webfont.woff") format("woff");
+  src: url("/src/fonts/cubic-webfont.woff2") format("woff2"),
+    url("/src/fonts/cubic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "prismregular";
-  src: url("prismfont_clv3-webfont.woff2") format("woff2"),
-    url("prismfont_clv3-webfont.woff") format("woff");
+  src: url("/src/fonts/prismfont_clv3-webfont.woff2") format("woff2"),
+    url("/src/fonts/prismfont_clv3-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/website-v2/static/css/main.c4661f36.chunk.css",
-    "main.js": "/website-v2/static/js/main.6979f729.chunk.js",
-    "main.js.map": "/website-v2/static/js/main.6979f729.chunk.js.map",
-    "runtime-main.js": "/website-v2/static/js/runtime-main.f3954ac1.js",
-    "runtime-main.js.map": "/website-v2/static/js/runtime-main.f3954ac1.js.map",
-    "static/js/2.002aad84.chunk.js": "/website-v2/static/js/2.002aad84.chunk.js",
-    "static/js/2.002aad84.chunk.js.map": "/website-v2/static/js/2.002aad84.chunk.js.map",
-    "index.html": "/website-v2/index.html",
-    "precache-manifest.811f2b48c0bcbeea83feaf2ee9fea298.js": "/website-v2/precache-manifest.811f2b48c0bcbeea83feaf2ee9fea298.js",
-    "service-worker.js": "/website-v2/service-worker.js",
-    "static/css/main.c4661f36.chunk.css.map": "/website-v2/static/css/main.c4661f36.chunk.css.map",
-    "static/js/2.002aad84.chunk.js.LICENSE.txt": "/website-v2/static/js/2.002aad84.chunk.js.LICENSE.txt",
-    "static/media/aahdeelogo.svg": "/website-v2/static/media/aahdeelogo.69abbbf7.svg",
-    "static/media/index.css": "/website-v2/static/media/prismfont_clv3-webfont.daaa325d.woff2"
+    "main.css": "/static/css/main.beb9c83c.chunk.css",
+    "main.js": "/static/js/main.1c247b23.chunk.js",
+    "main.js.map": "/static/js/main.1c247b23.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3374ac37.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3374ac37.js.map",
+    "static/js/2.002aad84.chunk.js": "/static/js/2.002aad84.chunk.js",
+    "static/js/2.002aad84.chunk.js.map": "/static/js/2.002aad84.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.93cf7b74a3f9a18b97d35f0d5ae6f471.js": "/precache-manifest.93cf7b74a3f9a18b97d35f0d5ae6f471.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.beb9c83c.chunk.css.map": "/static/css/main.beb9c83c.chunk.css.map",
+    "static/js/2.002aad84.chunk.js.LICENSE.txt": "/static/js/2.002aad84.chunk.js.LICENSE.txt",
+    "static/media/aahdeelogo.svg": "/static/media/aahdeelogo.69abbbf7.svg",
+    "static/media/index.css": "/static/media/prismfont_clv3-webfont.daaa325d.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.f3954ac1.js",
+    "static/js/runtime-main.3374ac37.js",
     "static/js/2.002aad84.chunk.js",
-    "static/css/main.c4661f36.chunk.css",
-    "static/js/main.6979f729.chunk.js"
+    "static/css/main.beb9c83c.chunk.css",
+    "static/js/main.1c247b23.chunk.js"
   ]
 }

@@ -10,7 +10,19 @@
   margin-bottom: 0;
   font-family: "Abel", sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
   color: #525252;
+}
+
+.Text {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "Abel", sans-serif;
+  font-size: 1.5rem;
+  color: #525252;
+  font-weight: bold;
+
+  width:1000px;
 }
 
 .link,
@@ -22,13 +34,19 @@
   color: #525252;
 }
 
-.Links > * + * {
+.Links > * {
   margin: 1rem;
 }
 
 .link:hover {
   color: #8093f1;
 }
+
+.footer{
+  
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -1,6 +1,6 @@
 import React from "react";
 import aahdeelogo from "./aahdeelogo.svg";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 
 function App() {

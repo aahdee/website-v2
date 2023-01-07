@@ -22,7 +22,7 @@
   color: #525252;
   font-weight: bold;
 
-  width:1000px;
+  width:auto;
 }
 
 .link,
@@ -33,10 +33,16 @@
   font-size: 2rem;
   color: #525252;
 }
-
-.Links > * {
+.Links{
   margin: 1rem;
 }
+.Links > * {
+  margin: 0 1rem 0 0;
+}
+.Links > :last-child {
+  margin: 0rem;
+}
+
 
 .link:hover {
   color: #8093f1;
@@ -46,6 +52,7 @@
   
 
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

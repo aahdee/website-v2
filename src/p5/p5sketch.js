@@ -6,7 +6,7 @@ export default class P5Sketch extends Component {
   constructor() {
     super();
     //for(let i = 0; i < )
-    this.bx = new ThreeDHeart(0, 300);
+    this.bx = new ThreeDHeart(0, 260);
   }
   setup = (p5, canvasParentRef) => {
     p5.createCanvas(window.innerWidth, window.innerHeight, p5.WEBGL).parent(

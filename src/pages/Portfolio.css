@@ -1,0 +1,22 @@
+.Tile{
+    display: flex;
+    flex-direction: row;
+    border: solid #525252;
+    background-color: aqua;
+    font-size: 0;
+}
+
+.SWName{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.SWDescription{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.List > *{
+    margin-top: 2rem;
+}
+

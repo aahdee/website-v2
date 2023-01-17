@@ -9,9 +9,10 @@
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Abel", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #525252;
+
 }
 
 .Text {
@@ -22,7 +23,10 @@
   color: #525252;
   font-weight: bold;
 
-  width:1000px;
+  width:auto;
+}
+.AllText{
+  background: #F4F4EDBB;
 }
 
 .link,
@@ -33,10 +37,16 @@
   font-size: 2rem;
   color: #525252;
 }
-
-.Links > * {
+.Links{
   margin: 1rem;
 }
+.Links > * {
+  margin: 0 1rem 0 0;
+}
+.Links > :last-child {
+  margin: 0rem;
+}
+
 
 .link:hover {
   color: #8093f1;
@@ -46,6 +56,7 @@
   
 
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -1,0 +1,43 @@
+.Tile{
+    display: flex;
+    flex-direction: row;
+    border: solid 0.5rem #525252;
+    font-size: 0;
+    background: #F4F4EDBB
+}
+
+.SWName{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #525252;
+}
+.SWImg{
+    border: solid 0.5rem #525252BB;
+    border-top-style: none;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+.SWDescription{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.SWYear{
+    font-size: 1rem;
+}
+.SWLink,
+.SWLink.visted{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #525252;
+}
+.SWLink:hover{
+    color: #8093f1;
+}
+
+.List > *{
+    margin-top: 2rem;
+}
+

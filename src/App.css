@@ -1,15 +1,59 @@
+.App{
+  width: 100%;
+  margin-top: 8rem;
+
+}
+
 .Home {
   text-align: center;
+  width: 80%;
+  margin:auto;
 }
+.Title-Wrapper{
+  /* border-color: white;
+  border-style: solid; */
+  background-color: #B388EBCC;
+  clip-path: polygon(
+    0 8%,
+    6% 0,
+    94% 0,
+    100% 8%,
+    100% 92%,
+    94% 100%,
+    6% 100%,
+    0% 92%,
+    0% 8%
+  )
+}
+
 .subpage{
   text-align: center;
+  width: 80%;
+  max-width: 1000px;
   align-items: center;
   display: flex;
-  flex-direction: column;
+  margin: auto;
+  flex-direction: column; 
+  justify-content: center;
   font-family: "Abel", sans-serif;
   font-size: 1.5rem;
   color: #525252;
  
+}
+
+.Back-Button{
+  border: solid white .15rem;
+  margin-top: 2rem;
+  background-color: #B388EBCC;
+  font-family: "Abel", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #525252;
+  margin-bottom: 2rem;
+}
+
+.Back-Button:hover{
+  color: #8093f1;
 }
 
 .App-logo {
@@ -36,17 +80,18 @@
     animation: logoani infinite 5s;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+    margin: 0 0 3rem 0
   }
 }
 
 .App-header {
   background-color: rgba(100, 0, 100, 0);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+
 }
 
 .App-link {

@@ -4,6 +4,7 @@ import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
+import BackButton from "./utils/BackButton";
 
 function App() {
   return (
@@ -44,7 +45,7 @@ function Home() {
           <Link className="link" to="/about">
               About
           </Link>
-          <a className="link" href="https://github.com/aahdee/resume">Resume</a>
+          <a className="link" href="https://github.com/aahdee/resume">Résumé</a>
           <Link className="link" to="/portfolio">
               Selected Works
           </Link>
@@ -66,18 +67,20 @@ function Contact() {
     <div className="subpage">
       <p className="Title">Contact</p>
       
-      <p className="Links">
-        <a className="link" href="https://github.com/aahdee">Github</a>
-        <a className="link" href="https://twitter.com/_aahdee_">Twitter</a>
-        <a className="link" href="https://hicetnunc.art/aahdee">Hitetnunc</a>
-      </p>
-      <p className="Text">
-        For inquiries, email me at albeit[dot]angular[at]gmail[dot]com or message me on Twitter
-      </p>
-      <p className="Text">
-        If you see the name of aahdee as you explore the internet, it is probably me :)
-      </p>
       
+      <div className="AllText">
+        <p className="Links">
+          <a className="link" href="https://github.com/aahdee">Github</a>
+          <a className="link" href="https://hicetnunc.art/aahdee">Hitetnunc</a>
+        </p>
+        <p className="Text">
+          For inquiries, email me at albeit[dot]angular[at]gmail[dot]com
+        </p>
+        <p className="Text">
+          If you see the name of aahdee as you explore the internet, it is probably me :)
+      </p>
+      </div>
+      <BackButton text="Back" />
     </div>
 
   );

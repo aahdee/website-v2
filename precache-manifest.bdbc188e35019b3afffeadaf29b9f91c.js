@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc3683b8913003a374045505523e9c8c",
+    "revision": "fb590762643228b4743d12ffd2046695",
     "url": "/index.html"
   },
   {
-    "revision": "37971bfaf7aae255c664",
+    "revision": "98440e006314b09ada4d",
     "url": "/static/css/main.b9d0c9e8.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.31905102.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37971bfaf7aae255c664",
-    "url": "/static/js/main.c58a07fe.chunk.js"
+    "revision": "98440e006314b09ada4d",
+    "url": "/static/js/main.026cb210.chunk.js"
   },
   {
     "revision": "ba126735810163618457",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/kubikmeta-webfont.e6e68453.woff"
   },
   {
+    "revision": "2ec170601b9296899a2dc5970cd1e74b",
+    "url": "/static/media/manualgan.2ec17060.png"
+  },
+  {
     "revision": "4bb552234d0048f256d26c78c07dccd0",
     "url": "/static/media/markerwaltz.4bb55223.png"
   },
@@ -66,5 +70,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "daaa325daf633ea1356a2e00962105e2",
     "url": "/static/media/prismfont_clv3-webfont.daaa325d.woff2"
+  },
+  {
+    "revision": "3a276c5aab2f5dcd537ae1d1663283c4",
+    "url": "/static/media/simweather.3a276c5a.png"
   }
 ]);

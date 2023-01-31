@@ -11,14 +11,28 @@
         "name": "Marker Waltz",
         "imageLink": "./portfolioData/imgs/markerwaltz.png",
         "year": "2021",
-        "description": "Two markers, two motors, two batteries, one graceful dance",
+        "description": "Two markers, two motors, two batteries, one graceful dance.",
         "link": "https://vimeo.com/596001104"
       },
       {
         "name": "Generative Pleats",
         "imageLink": "./portfolioData/imgs/generativepleat.jpg",
         "year": "2021",
-        "description": "Computationally preforating paper with an Axidraw to create precise pleating designs"
+        "description": "Computationally preforating paper with an Axidraw to create precise pleating designs."
+      },
+      {
+        "name": "Manual GAN",
+        "imageLink": "./portfolioData/imgs/manualgan.png",
+        "year": "2019",
+        "description": "\"is this a cat?\"\n\"absolutely not.\"",
+        "link" : "https://www.youtube.com/watch?v=pCRUCK5IbV4"
+      },
+      {
+        "name": "Simulated Weather",
+        "imageLink": "./portfolioData/imgs/simweather.png",
+        "year": "2019",
+        "description": "A virtual multi-touch interactive display to resemble playing in the snow.",
+        "link" : "https://www.youtube.com/watch?v=GsWJKZBOHBU"
       },
       {
         "name": "Great Hall AR Bathhouse",

@@ -5,6 +5,7 @@ import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import BackButton from "./utils/BackButton";
+import ClientWork from "./pages/ClientWork";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/portfolio">
             <PortfolioPage/>
+          </Route>
+          <Route path="/client">
+            <ClientWork/>
           </Route>
           <Route path="/contact">
             <Contact />
@@ -45,13 +49,17 @@ function Home() {
           <Link className="link" to="/about">
               About
           </Link>
-          <a className="link" href="https://github.com/aahdee/resume">Résumé</a>
+          <a className="link" href="https://github.com/aahdee/resume/blob/master/resume.pdf">Résumé</a>
           <Link className="link" to="/portfolio">
-              Selected Works
+              Personal Work
           </Link>
-          <Link className="link" to="/contact">
-              Contact
-          </Link>
+          
+          </p>
+          <p className="Links">
+              {/* s */}
+              <Link className="link" to="/contact">
+                  Contact
+              </Link>
           </p>
         </div>
     </header>

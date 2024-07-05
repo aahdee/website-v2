@@ -6,7 +6,7 @@ console.log(data.largeProjects[0])
 
 function Title(){
     return(
-        <p className="Title">Personal Work</p>
+        <p className="Title">Client Work</p>
     )
 }
 
@@ -46,7 +46,7 @@ function TileG(props){
 
 
 
-function PortfolioPage(){
+function ClientWork(){
     const renderLargeProj = data.largeProjects.map(
         (info) => {
             return (<TileG info={info}/>)
@@ -63,4 +63,4 @@ function PortfolioPage(){
     )
 }
 
-export default PortfolioPage;
+export default ClientWork;

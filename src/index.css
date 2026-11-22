@@ -1,7 +1,8 @@
 .Title {
   margin-bottom: 1rem;
-  font-family: "kubikmetaregular";
-  font-size: 3rem;
+  font-family: "aghja";
+  font-weight: bold;
+  font-size: 5rem;
   color: #525252;
 }
 
@@ -87,6 +88,13 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "aghja";
+  src: url("fonts/aghja.medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "kubikmetaregular";
   src: url("fonts/kubikmeta-webfont.woff2") format("woff2"),

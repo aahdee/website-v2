@@ -1,0 +1,121 @@
+/*
+  CRA bundles every CSS file globally, so all rules here are scoped under
+  .PlotterPage to avoid changing the tiles on the Personal Work page.
+*/
+
+/* Rows of three tiles */
+.PlotterPage .List{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Image on top, text underneath */
+.PlotterPage .Tile{
+    display: flex;
+    flex-direction: column;
+    border: solid 0.5rem #525252;
+    font-size: 0;
+    background: #F4F4EDBB
+}
+
+.PlotterPage .SWName{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #525252;
+}
+.PlotterPage .SWImg{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-bottom: solid 0.5rem #525252BB;
+}
+
+.PlotterPage .SWDescription{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.PlotterPage .SWYear{
+    font-size: 1rem;
+}
+.PlotterPage .SWLink,
+.PlotterPage .SWLink:visited{
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #525252;
+}
+.PlotterPage .SWLink:hover{
+    color: #8093f1;
+}
+
+/* Fewer columns on smaller screens */
+@media (max-width: 1000px){
+    .PlotterPage .List{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 600px){
+    .PlotterPage .List{
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Individual project page (PlotterProject.js) */
+/* Box behind the year + description (background comes from .AllText) */
+.PlotterPage .ProjectInfo{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.PlotterPage .ProjectYear{
+    font-size: 1rem;
+    color: #525252;
+}
+.PlotterPage .ProjectDescription{
+    font-size: 1.5rem;
+    color: #525252;
+    margin: 1rem 0 0;
+}
+
+/* Photo gallery: same rows of three as the tile list */
+.PlotterPage .Gallery{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    /* Each tile keeps its own height (no stretching to match a captioned
+       neighbour) and sits vertically centred in its row */
+    align-items: center;
+}
+.PlotterPage .GalleryItem{
+    margin: 0;
+    border: solid 0.5rem #525252;
+    background: #F4F4EDBB;
+}
+.PlotterPage .GalleryImg{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.PlotterPage .GalleryCaption{
+    font-size: 1.25rem;
+    color: #525252;
+    padding: 0.75rem;
+    border-top: solid 0.5rem #525252BB;
+}
+
+@media (max-width: 1000px){
+    .PlotterPage .Gallery{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 600px){
+    .PlotterPage .Gallery{
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

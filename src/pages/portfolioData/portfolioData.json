@@ -1,6 +1,13 @@
 {
     "largeProjects": [
       {
+        "name": "Plotter Artwork",
+        "imageLink": "./portfolioData/imgs/plotter/baubles/b8.jpg",
+        "year": "",
+        "description": "A selection of procedural artwork created with various plotters",
+        "link": "/plotter"
+      },
+      {
         "name": "p5grid",
         "imageLink": "./portfolioData/imgs/p5gridexample.gif",
         "year": "2019 - Current",

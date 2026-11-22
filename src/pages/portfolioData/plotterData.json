@@ -1,0 +1,131 @@
+{
+    "largeProjects": [
+        {
+            "id": "balconies",
+            "name": "Balcons fantômes (Ghost Balconies)",
+            "imageLink": "./portfolioData/imgs/plotter/balconies/balconiescover.jpg",
+            "year": "2026",
+            "shortDescription": "Procedurally generated balconies.",
+            "longDescription" : "Inspired by the balconies of Nantes, France. Each balcony is composed of sections inspired from Haussmannian architecture. Created with Blender's Geometry Nodes. All plots are A3 sized and are plotted on Axidraw.",
+            "photos": [
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/balconies/balconies1.jpg"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/balconies/balconiescover.jpg"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/balconies/balconies2.jpg"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/balconies/balconies3.jpg"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/balconies/balconies4.jpg"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/balconies/balconies5.jpg"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/balconies/in_prog.jpg"
+                }
+            ]
+        },
+        {
+            "id": "release",
+            "name": "Release",
+            "imageLink": "./portfolioData/imgs/plotter/hitachi/hitachi1.png",
+            "year": "2025",
+            "shortDescription": "An assortment of plots made with a brush-wielding back massager.",
+            "longDescription":"An assortment of plots made with a brush-wielding back massager. All plots are 5inx7in.",
+            "photos": [
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/hitachi/hitachi1.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/hitachi/hitachi2.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/hitachi/hitachi3.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/hitachi/hitachi4.png"
+                }
+            ]
+        },
+        {
+            "id": "baubles",
+            "name": "Baubles",
+            "imageLink": "./portfolioData/imgs/plotter/baubles/b7.png",
+            "year": "2025-2026",
+            "shortDescription": "Delicate hexagonal structures",
+            "longDescription" : "These plots started from the task of creating an image with one stroke. I challenged myself to capitalize on the Bantam ArtFrame's capability to read GCode by generating my own, which allowed me to have precise control of the pen pressure. All plots are 7inx7in unless otherwise specified.",
+            "photos": [
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b1.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b2.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b3.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b4.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b5.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b6.png"
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b7.png"
+                }
+                ,
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b8.jpg"
+                }
+                ,
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b9.jpg",
+                    "caption" : "Plotted on a 6in diameter wood circle."
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b10.jpg",
+                    "caption" : "72in x 24in."
+                },
+                {
+                    "imageLink": "./portfolioData/imgs/plotter/baubles/b10-close.jpg",
+                    "caption" : "Close up of the 72in x 24in plot."
+                }
+            ]
+        }
+    ],
+    "smallProjects": [
+        {
+            "name": "Small1",
+            "imageLink": "./portfolioData/imgs/p5gridexample.gif",
+            "year": "",
+            "description": "a small one"
+        },
+        {
+            "name": "Small2",
+            "imageLink": "./portfolioData/imgs/p5gridexample.gif",
+            "year": "",
+            "description": "a small one"
+        },
+        {
+            "name": "Small3",
+            "imageLink": "./portfolioData/imgs/p5gridexample.gif",
+            "year": "",
+            "description": "a small one"
+        },
+        {
+            "name": "Small4",
+            "imageLink": "./portfolioData/imgs/p5gridexample.gif",
+            "year": "",
+            "description": "a small one"
+        }
+    ]
+}

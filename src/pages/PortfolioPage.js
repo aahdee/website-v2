@@ -1,47 +1,41 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BackButton from "../utils/BackButton";
 import "./Portfolio.css"
 import data from "./portfolioData/portfolioData.json"
-console.log(data.largeProjects[0])
+// console.log(data.largeProjects[0])
 
 function Title(){
     return(
-        <p className="Title">Personal Work</p>
+        <p className="Title">Selection of Work</p>
     )
 }
 
 
 function TileG(props){
     const info = props.info
-    console.log(info.imageLink)
-    if (info.link){
-        return(
-            <div className="Tile">
-                <div>
-                    <img className="SWImg" src={require(`${info.imageLink}`)}/>
-                </div>
-                <div>
-                    <div className="SWName">{info.name}</div>
-                    <div className="SWYear">{info.year}</div>
-                    <p className="SWDescription">{info.description}</p>
-                    <a className="SWLink" href={info.link}>Click here to view more</a>
-                </div>
-            </div>
-        )
-    }
     return(
         <div className="Tile">
-            <div>
-                <img className="SWImg" src={require(`${info.imageLink}`)}/>
+            <div className="SWImgCol">
+                <img
+                    className="SWImg"
+                    src={require(`${info.imageLink}`)}
+                    alt={info.name}
+                />
             </div>
-            <div>
+            <div className="SWText">
                 <div className="SWName">{info.name}</div>
                 <div className="SWYear">{info.year}</div>
                 <p className="SWDescription">{info.description}</p>
+                {info.link && (info.link.startsWith("/") ? (
+                    //internal page on this site, e.g. "/plotter"
+                    <Link className="SWLink" to={info.link}>Click here to view more</Link>
+                ) : (
+                    <a className="SWLink" href={info.link}>Click here to view more</a>
+                ))}
             </div>
         </div>
     )
-    
 }
 
 
@@ -49,11 +43,11 @@ function TileG(props){
 function PortfolioPage(){
     const renderLargeProj = data.largeProjects.map(
         (info) => {
-            return (<TileG info={info}/>)
+            return (<TileG key={info.name} info={info}/>)
         }
     )
     return(
-        <div className="subpage"> 
+        <div className="subpage PortfolioPage">
             <Title/>
             <div className="List">
                 {renderLargeProj}

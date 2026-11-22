@@ -1,36 +1,42 @@
-import React from "react";
+﻿import React from "react";
 import aahdeelogo from "./aahdeelogo.svg";
-import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { createHashRouter, RouterProvider, Outlet, ScrollRestoration, Link } from "react-router-dom";
 import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import BackButton from "./utils/BackButton";
 import ClientWork from "./pages/ClientWork";
+import PlotterArt from "./pages/PlotterArt";
+import PlotterProject from "./pages/PlotterProject";
+
+// Shared wrapper for every page. <ScrollRestoration> scrolls to the top when
+// opening a new page, and restores the previous position when going back/forward.
+function Layout() {
+  return (
+    <div className="App">
+      <Outlet />
+      <ScrollRestoration />
+    </div>
+  );
+}
+
+const router = createHashRouter([
+  {
+    element: <Layout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <AboutPage /> },
+      { path: "/portfolio", element: <PortfolioPage /> },
+      { path: "/plotter", element: <PlotterArt /> },
+      { path: "/plotter/:projectId", element: <PlotterProject /> },
+      { path: "/client", element: <ClientWork /> },
+      { path: "/contact", element: <Contact /> },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <AboutPage />
-          </Route>
-          <Route path="/portfolio">
-            <PortfolioPage/>
-          </Route>
-          <Route path="/client">
-            <ClientWork/>
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+  return <RouterProvider router={router} />;
 }
 
 function Home() {
@@ -41,8 +47,8 @@ function Home() {
         <div className="Title-Wrapper">
           <p className="Title" style={{margin:"16px"}}>Aren Davey</p>
           <p className="Bio">
-          Generative Artist<br />
-          2020 Processing Foundation Fellow <br /> 
+          Creative Technologist<br />
+          Generative Artist<br /> 
           Shape Aficionado
           </p>
           <p className="Links">
@@ -51,20 +57,21 @@ function Home() {
           </Link>
           <a className="link" href="https://github.com/aahdee/resume/blob/master/resume.pdf">Résumé</a>
           <Link className="link" to="/portfolio">
-              Personal Work
+              Selection of Work
           </Link>
-          
           </p>
           <p className="Links">
               {/* s */}
+              <Link className="link" to="/client">
+                  Client Work
+              </Link>
               <Link className="link" to="/contact">
                   Contact
               </Link>
+
           </p>
         </div>
     </header>
-    <body>
-    </body>
     </div>
 );
 }
@@ -79,7 +86,6 @@ function Contact() {
       <div className="AllText">
         <p className="Links">
           <a className="link" href="https://github.com/aahdee">Github</a>
-          <a className="link" href="https://hicetnunc.art/aahdee">Hitetnunc</a>
         </p>
         <p className="Text">
           For inquiries, email me at albeit[dot]angular[at]gmail[dot]com

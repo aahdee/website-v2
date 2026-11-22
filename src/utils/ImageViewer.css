@@ -1,0 +1,70 @@
+/* Clickable image (reset default button styles) */
+.ZoomableImage{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: zoom-in;
+}
+.ZoomableImage:focus-visible{
+    outline: 0.25rem solid #8093f1;
+    outline-offset: -0.25rem;
+}
+
+/* Full-size image viewer overlay (rendered at the end of <body>) */
+.ImageViewer{
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(37, 37, 37, 0.85);
+}
+.ImageViewerFigure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    max-width: 90vw;
+    cursor: default;
+}
+.ImageViewerImg{
+    /* Natural size, but never larger than 90% of the screen */
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border: solid 0.5rem #525252;
+    background: #F4F4ED;
+    cursor: default;
+}
+/* Leave room for the description so photo + text still fit on screen */
+.ImageViewerFigure:has(.ImageViewerDescription) .ImageViewerImg{
+    max-height: 80vh;
+}
+.ImageViewerDescription{
+    margin-top: 1rem;
+    max-width: 60rem;
+    font-size: 1.25rem;
+    color: #F4F4ED;
+    text-align: center;
+}
+.ImageViewerClose{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    padding: 0 0.5rem;
+    border: none;
+    background: none;
+    color: #F4F4ED;
+    font-size: 3rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.ImageViewerClose:hover,
+.ImageViewerClose:focus-visible{
+    color: #8093f1;
+}

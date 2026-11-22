@@ -3,13 +3,14 @@
     flex-direction: row;
     border: solid 0.5rem #525252;
     font-size: 0;
-    background: #F4F4EDBB
+    background: #F4F4EDBB;
 }
 
 .SWName{
     margin-top: 1.5rem;
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: "aghja";
+    line-height: .7em;
+    font-size: 4rem;
     color: #525252;
 }
 .SWImg{
@@ -41,3 +42,45 @@
     margin-top: 2rem;
 }
 
+
+/* Personal Work page: every image is 300px tall, width follows its
+   proportions. Scoped so the plotter page isn't affected. */
+.PortfolioPage .SWImgCol{
+    flex: 0 0 auto;
+}
+.PortfolioPage .SWImg{
+    display: block;
+    height: 300px;
+    width: auto;
+}
+.PortfolioPage .SWText{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex: 1 1 auto;
+    /* Centre the text block vertically within the tile, next to the image */
+    align-self: center;
+    text-align: center;
+}
+
+/* Small screens (phones): stack the description under the image and size
+   the image to ~75% of the screen width instead of a fixed 300px height. */
+@media (max-width: 700px){
+    .PortfolioPage .Tile{
+        flex-direction: column;
+        align-items: center;
+    }
+    .PortfolioPage .SWImgCol{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 0.5rem #525252BB;
+    }
+    .PortfolioPage .SWImg{
+        width: 75vw;
+        height: auto;
+        border: none;
+    }
+    .PortfolioPage .SWText{
+        width: 100%;
+    }
+}

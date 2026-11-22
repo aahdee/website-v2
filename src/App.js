@@ -48,7 +48,7 @@ function Home() {
           <p className="Title" style={{margin:"16px"}}>Aren Davey</p>
           <p className="Bio">
           Creative Technologist<br />
-          Generative Artist<br /> 
+          Procedural Artist<br /> 
           Shape Aficionado
           </p>
           <p className="Links">

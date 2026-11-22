@@ -55,6 +55,7 @@
 }
 .ImageViewerLoading{
     font-size: 1.5rem;
+    font-family: "Abel",sans-serif;
     color: #F4F4ED;
 }
 .ImageViewerFigure[hidden]{

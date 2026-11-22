@@ -57,7 +57,6 @@ function PlotterArt(){
             return (<TileG key={info.id || info.name} info={info} link={projectPath(info)} onOpen={setViewing}/>)
         }
     )
-    // Small projects never link anywhere
     // const renderSmallProj = data.smallProjects.map(
     //     (info) => {
     //         return (<TileG key={info.name} info={info} onOpen={setViewing}/>)
@@ -66,6 +65,9 @@ function PlotterArt(){
     return(
         <div className="subpage PlotterPage">
             <Title/>
+            <div className="AllText ProjectInfo">
+                {data["long-description"] && <p className="ProjectDescription">{data["long-description"]}</p>}
+            </div>
             <div className="List">
                 {renderLargeProj}
                 {/* {renderSmallProj} */}

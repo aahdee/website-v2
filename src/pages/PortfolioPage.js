@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../utils/BackButton";
 import "./Portfolio.css"
 import data from "./portfolioData/portfolioData.json"
+import { thumbImage } from "./imageSources"
 // console.log(data.largeProjects[0])
 
 function Title(){
@@ -19,7 +20,7 @@ function TileG(props){
             <div className="SWImgCol">
                 <img
                     className="SWImg"
-                    src={require(`${info.imageLink}`)}
+                    src={thumbImage(info.imageLink)}
                     alt={info.name}
                 />
             </div>

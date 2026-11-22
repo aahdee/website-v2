@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import BackButton from "../utils/BackButton";
 import ImageViewer, { ZoomableImage } from "../utils/ImageViewer";
 import data from "./portfolioData/plotterData.json"
+import { fullImage, thumbImage } from "./imageSources"
 import "./Plotter.css"
 
 
@@ -31,7 +32,8 @@ function PlotterProject(){
             <figure className="GalleryItem" key={photo.imageLink + i}>
                 <ZoomableImage
                     className="GalleryImg"
-                    src={require(`${photo.imageLink}`)}
+                    src={thumbImage(photo.imageLink)}
+                    fullSrc={fullImage(photo.imageLink)}
                     alt={alt}
                     description={description}
                     onOpen={setViewing}

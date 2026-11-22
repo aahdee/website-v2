@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BackButton from "../utils/BackButton";
 import ImageViewer, { ZoomableImage } from "../utils/ImageViewer";
 import data from "./portfolioData/plotterData.json"
+import { fullImage, thumbImage } from "./imageSources"
 import "./Plotter.css"
 
 
@@ -23,12 +24,17 @@ export function projectPath(info){
 
 function TileG(props){
     const info = props.info
-    const src = require(`${info.imageLink}`)
     const link = props.link
     return(
         <div className="Tile">
             <div>
-                <ZoomableImage className="SWImg" src={src} alt={info.name} onOpen={props.onOpen}/>
+                <ZoomableImage
+                    className="SWImg"
+                    src={thumbImage(info.imageLink)}
+                    fullSrc={fullImage(info.imageLink)}
+                    alt={info.name}
+                    onOpen={props.onOpen}
+                />
             </div>
             <div>
                 <div className="SWName">{info.name}</div>

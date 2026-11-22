@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import "./ImageViewer.css"
 
@@ -6,6 +6,8 @@ import "./ImageViewer.css"
 // `image` is { src, alt, description? }.
 function ImageViewer(props){
     const { image, onClose } = props
+    // High-res originals can take a moment; show a loading message until ready
+    const [loaded, setLoaded] = useState(false)
 
     useEffect(() => {
         const onKeyDown = (e) => {
@@ -39,11 +41,18 @@ function ImageViewer(props){
                 ×
             </button>
             {/* Clicking the photo or its description shouldn't close the viewer */}
-            <figure className="ImageViewerFigure" onClick={(e) => e.stopPropagation()}>
+            {!loaded && <p className="ImageViewerLoading">Loading…</p>}
+            <figure
+                className="ImageViewerFigure"
+                onClick={(e) => e.stopPropagation()}
+                hidden={!loaded}
+            >
                 <img
                     className="ImageViewerImg"
                     src={image.src}
                     alt={image.alt}
+                    onLoad={() => setLoaded(true)}
+                    onError={() => setLoaded(true)}
                 />
                 {image.description && (
                     <figcaption className="ImageViewerDescription">{image.description}</figcaption>
@@ -54,16 +63,19 @@ function ImageViewer(props){
     )
 }
 
-// Clickable image that opens the viewer via `onOpen({ src, alt })`
+// Clickable image that opens the viewer.
+// `src` is what's shown on the page (a small thumbnail); `fullSrc` is the
+// high-res original, which is only downloaded once the viewer opens.
 export function ZoomableImage(props){
+    const fullSrc = props.fullSrc || props.src
     return(
         <button
             type="button"
             className="ZoomableImage"
-            onClick={() => props.onOpen({ src: props.src, alt: props.alt, description: props.description })}
+            onClick={() => props.onOpen({ src: fullSrc, alt: props.alt, description: props.description })}
             aria-label={`View ${props.alt} full size`}
         >
-            <img className={props.className} src={props.src} alt={props.alt}/>
+            <img className={props.className} src={props.src} alt={props.alt} loading="lazy"/>
         </button>
     )
 }

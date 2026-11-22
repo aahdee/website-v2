@@ -27,7 +27,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-`npm run deploy` to change live build
+### `npm run deploy` to change live build
+
+### `npm run thumbs`
+
+Makes thumbnail images from the high resolution images. 
+
+
 
 ### `npm run eject`
 

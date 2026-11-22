@@ -16,6 +16,7 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
+    "thumbs": "node scripts/make-thumbs.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "set PORT=3001 && react-scripts start",

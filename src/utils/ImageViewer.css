@@ -49,8 +49,16 @@
     margin-top: 1rem;
     max-width: 60rem;
     font-size: 1.25rem;
+    font-family: "Abel",sans-serif;
     color: #F4F4ED;
     text-align: center;
+}
+.ImageViewerLoading{
+    font-size: 1.5rem;
+    color: #F4F4ED;
+}
+.ImageViewerFigure[hidden]{
+    display: none;
 }
 .ImageViewerClose{
     position: absolute;
